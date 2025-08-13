@@ -57,7 +57,7 @@ python prepare_unseen_absa_data.py --input new_data.csv --model_dir checkpoints/
 ```
 
 ### 6. Dependency Parsing
-Aspect spans and their dependencies were extracted using `biaffine_dep_parser.py`, based on the `SuPar library` (Biaffine dependency parser trained on English TreeBanks). Output is aligned to the sentiment classification task and formatted using `spitter_jsonl.py`.
+Aspect spans and their dependencies were extracted using `biaffine_dep_parser.py`, based on the `SuPar library` (Biaffine dependency / English TreeBanks). Output is aligned to the sentiment classification task and formatted using `spitter_jsonl.py`.
 
 ---
 
