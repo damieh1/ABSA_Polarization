@@ -1,6 +1,8 @@
 # ABSA Sentiment Analysis: Scripts for Aspect-Based Classification and Evaluation
 
-This repository contains scripts and resources for fine-tuning a DeBERTa-based model for aspect-based sentiment analysis (ABSA). The project includes preprocessing, fine-tuning, evaluation, and application to unseen data. It was developed as part of a study analyzing sentiment in user-generated content about geopolitical entities, also known as aspect terms, in social media discourse.
+- Repository contains scripts and resources for fine-tuning a DeBERTa-based model for aspect-based sentiment analysis (ABSA)
+- The project includes preprocessing, fine-tuning, evaluation, and application to unseen data.
+- It was developed as part of a study analyzing sentiment in user-generated content about (geo-)political entities, also known as aspect terms, in social media discourse.
 
 ---
 
@@ -17,7 +19,7 @@ This repository contains scripts and resources for fine-tuning a DeBERTa-based m
 │   └── training/data_input/
 │       ├── Ground_truth_APC.csv   # Annotated dataset for training
 │       └── Ground_truth_APC.raw   # Raw dataset for formatting
-└── requirements.txt               # Python dependencies (to be added)
+└── requirements.txt               # Python dependencies
 ```
 
 ---
