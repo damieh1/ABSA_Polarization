@@ -33,7 +33,7 @@ pip install -r requirements.txt
 ```
 
 ### 2. Format Training Data
-Use `format_apc.py` to convert `.raw` and `.csv` files into the proper format for Hugging Face model training.
+Build triplets before training: Use `format_apc.py` to convert `.raw` and `.csv` files into the proper format for Hugging Face model training.
 ```bash
 python format_apc.py --input_csv training/data_input/Ground_truth_APC.csv --output_jsonl formatted_data.jsonl
 ```
@@ -57,7 +57,7 @@ python prepare_unseen_absa_data.py --input new_data.csv --model_dir checkpoints/
 ```
 
 ### 6. Dependency Parsing
-Aspect spans and their dependencies were extracted using `biaffine_dep_parser.py`, based on a Biaffine dependency parser. Output is aligned to the sentiment classification task and formatted using `spitter_jsonl.py`.
+Aspect spans and their dependencies were extracted using `biaffine_dep_parser.py`, based on a Biaffine dependency parser (trained on English Treebanks). Output is aligned to the sentiment classification task and formatted using `spitter_jsonl.py`.
 
 ---
 
