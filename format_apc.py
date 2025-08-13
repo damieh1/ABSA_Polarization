@@ -13,7 +13,7 @@ def replace_aspect(sentence, aspect):
 # Apply transformation
 df["Sentence"] = df.apply(lambda row: replace_aspect(row["Sentence"], row["Aspect"]), axis=1)
 
-# Write APC formatted file
+# Write APC formatted file and build Triplets
 apc_formatted_file_path = "Ground_truth_APC.raw"
 with open(apc_formatted_file_path, "w", encoding="utf-8") as f:
     for _, row in df.iterrows():
