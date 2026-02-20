@@ -9,17 +9,17 @@
 ## Folder Structure
 
 ```
-├── format_apc.py                  # Formats the aspect-polarity classification input
-├── eval_per_aspect.py             # Evaluates the trained model per aspect
-├── fine_tune_deberta.py           # Fine-tunes DeBERTa on ABSA data
-├── prepare_unseen_absa_data.py    # Applies trained model to new data
-├── replicate_the_paper/
-│   ├── biaffine_dep_parser.py     # Runs dependency parsing to extract aspects
-│   ├── spitter_jsonl.py           # Converts structured input into JSONL
-│   └── training/data_input/
-│       ├── Ground_truth_APC.csv   # Annotated dataset for training
-│       └── Ground_truth_APC.raw   # Raw dataset for formatting
-└── requirements.txt               # Python dependencies
+format_apc.py                  # Formats the aspect-polarity classification input
+eval_per_aspect.py             # Evaluates the trained model per aspect
+fine_tune_deberta.py           # Fine-tunes DeBERTa on ABSA data
+prepare_unseen_absa_data.py    # Applies trained model to new data
+replicate_the_paper/
+  ── biaffine_dep_parser.py     # Runs dependency parsing to extract aspects
+  ── spitter_jsonl.py           # Converts structured input into JSONL
+  ── training/data_input/
+  ── Ground_truth_APC.csv   # Annotated dataset for training
+  ── Ground_truth_APC.raw   # Raw dataset for formatting
+  ── requirements.txt               # Python dependencies
 ```
 
 ---
