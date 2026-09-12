@@ -1,0 +1,20 @@
+ame: AISLOP Code Quality Gate
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  aislop:
+    runs-on: ubuntu-latest
+    name: AISLOP Code Quality Analysis
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run AISLOP
+        uses: aislop-ai/aislop-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
