@@ -1,8 +1,9 @@
-ame: AISLOP Code Quality Gate
+name: AISLOP Code Quality Gate
 
 on:
   pull_request:
     types: [opened, synchronize, reopened]
+  workflow_dispatch:  # Add this line
 
 jobs:
   aislop:
